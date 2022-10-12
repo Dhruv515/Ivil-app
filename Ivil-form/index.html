@@ -1,0 +1,64 @@
+<!DOCTYPE >
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivil</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+    <div class="container">
+       <h1 class="head">TEST FORM</h1>
+       <form id="form" name="myForm" action="" onsubmit="return validateForm()">
+
+        <div class="main">
+            
+        <label>Name:
+        <input required type="text" id="name" name="name"></label><br>
+        <label>Roll-No:
+        <input required type="text" id="rnum" name="rnum" ></label><br>
+        <label>Branch:
+        <input required type="text" id="branch" name="branch"></label><br>
+        
+        <label class="rg">Year:</label><br>
+        <label for="1">1st:
+        <input required type="radio" id="1" name="year" value="1"></label>
+        
+        
+        <label for="2">2nd
+        <input required  type="radio" id="2" name="year" value="2"></label>
+
+        <label for="3">3rd
+        <input required type="radio" id="3" name="year" value="3"></label>
+         
+        <label for="4">4th
+        <input required type="radio" id="4" name="year" value="4"></label>
+
+        <br>
+        
+
+        <label>Email:
+        <input required type="email" id="email" name="email"></label><br>
+
+        <label>Phone-Number:
+        <input required type="number" id="number" name="number"></label><br>
+        <span id="num"></span>
+       </div>
+
+        <button type="submit" id="b1" onclick="return validateForm()">Submit</button>
+        <button type="reset" onclick="document.location.reload(true)" >Reset</button>
+
+     </form>
+
+     
+
+      <p id="log"></p>
+    </div>
+
+
+
+    <script src="index.js"></script>
+</body>
+</1>
